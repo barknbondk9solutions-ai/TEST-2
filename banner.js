@@ -563,6 +563,18 @@ if (settings.testMode) {
     transition: 'opacity 120ms linear'
   });
   document.body.appendChild(overlay);
+
+const logo = document.createElement('img');
+logo.src = "https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/watermark-bnbk9-mv0P7QQR34SLGGMv.png";
+logo.style.opacity = '1';             // semi-transparent
+logo.style.maxWidth = '300px';
+logo.style.maxHeight = '300px';
+logo.style.pointerEvents = 'none';      // ensures it doesn’t block clicks
+logo.style.position = 'absolute';
+logo.style.top = '50%';
+logo.style.left = '50%';
+logo.style.transform = 'translate(-50%, -40%)'; // slightly lower than center
+overlay.appendChild(logo);
   
   const showBlur = () => (overlay.style.opacity = '1');
   const hideBlur = () => (overlay.style.opacity = '0');
