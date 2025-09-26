@@ -447,7 +447,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const logo = document.createElement('img');
 logo.src = "https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/watermark-bnbk9-mv0P7QQR34SLGGMv.png";
-logo.style.opacity = '0.2';             // semi-transparent
+logo.style.opacity = '1';             // semi-transparent
 logo.style.maxWidth = '300px';
 logo.style.maxHeight = '300px';
 logo.style.pointerEvents = 'none';      // ensures it doesn’t block clicks
